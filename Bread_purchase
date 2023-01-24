@@ -1,10 +1,10 @@
-fresh_loaves = int(input("Enter the number of fresh loaves purchased: "))
-day_old_loaves = int(input("Enter the number of day old loaves purchased: "))
-
-regular_price = fresh_loaves * 185
-day_old_price = day_old_loaves * 185 * 0.6
-total_price = regular_price + day_old_price
-
-print("Regular price: Rs.{:.2f}".format(regular_price))
-print("Amount of day old loaves: Rs.{:.2f}".format(day_old_price))
-print("Total amount: Rs.{:.2f}".format(total_price))
+price=eval(input("Enter the regular price="))
+fresh=int(input("Enter the no/- of fresh loaves purchased="))
+old=int(input("Enter the no/- of old loaves purchased="))
+fresh_amt=fresh*price
+old_amt=old*(price*(40/100))
+total=fresh_amt+old_amt
+print("Regular price= %.2f" % price)
+print("Amount for new loaves= %.2f" % fresh_amt)
+print("Amount for old loaves= %.2f" % old_amt)
+print("Total price= %.2f" % total)
