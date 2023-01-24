@@ -1,0 +1,10 @@
+fresh_loaves = int(input("Enter the number of fresh loaves purchased: "))
+day_old_loaves = int(input("Enter the number of day old loaves purchased: "))
+
+regular_price = fresh_loaves * 185
+day_old_price = day_old_loaves * 185 * 0.6
+total_price = regular_price + day_old_price
+
+print("Regular price: Rs.{:.2f}".format(regular_price))
+print("Amount of day old loaves: Rs.{:.2f}".format(day_old_price))
+print("Total amount: Rs.{:.2f}".format(total_price))
