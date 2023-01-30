@@ -1,0 +1,9 @@
+def convert_case(s):
+    upper_case = s.upper()
+    lower_case = s.lower()
+    return upper_case, lower_case
+
+s = input("Enter a string: ")
+upper_case, lower_case = convert_case(s)
+print("Uppercase: ", upper_case)
+print("Lowercase: ", lower_case)
