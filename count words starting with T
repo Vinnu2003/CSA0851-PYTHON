@@ -1,0 +1,12 @@
+def count_words_starting_with_T(s):
+    s = s.lower()
+    words = s.split()
+    count = 0
+    for word in words:
+        if word[0] == "t":
+            count += 1
+    return count
+
+s = input("Enter a string: ")
+count = count_words_starting_with_T(s)
+print("Number of words starting with 'T': ", count)
