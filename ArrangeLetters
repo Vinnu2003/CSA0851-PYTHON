@@ -1,0 +1,8 @@
+def arrange_letters(s):
+    s = ''.join(sorted(s))
+    print("In alphabetical order: ",s)
+    reverse_s = ''.join(sorted(s, reverse=True))
+    print("In reverse order: ",reverse_s)
+
+s = input("Enter a string: ")
+arrange_letters(s)
