@@ -1,0 +1,26 @@
+def find_grade(marks):
+    if marks >= 90:
+        return "A+"
+    elif marks >= 80:
+        return "A"
+    elif marks >= 70:
+        return "B+"
+    elif marks >= 60:
+        return "B"
+    elif marks >= 50:
+        return "C"
+    else:
+        return "F"
+
+def find_average(marks):
+    return sum(marks) / len(marks)
+
+def student_marks(name, marks):
+    print("Name: ", name)
+    print("Marks: ", marks)
+    print("Grade: ", find_grade(find_average(marks)))
+    print("Average: ", find_average(marks))
+    
+name = input("Enter the student name: ")
+marks = list(map(int,input("Enter the marks of student: ").split(',')))
+student_marks(name, marks)
